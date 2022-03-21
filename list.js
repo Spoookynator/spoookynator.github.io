@@ -1,8 +1,14 @@
 // remove comment to disable logs
 // console.log = function() {};
 
-const listEntries = JSON.parse(localStorage.getItem("listEntries"));
-const entryStyle = JSON.parse(localStorage.getItem("entryStyle"));
+if (JSON.parse(localStorage.getItem("listEntries")) == null) {
+  const listEntries = [""];
+}  else {const listEntries = JSON.parse(localStorage.getItem("listEntries"));}
+
+if (JSON.parse(localStorage.getItem("entryStyle")) == null)
+{
+  entryStyle = [0];
+} else {const entryStyle = JSON.parse(localStorage.getItem("entryStyle"));}
 
 console.log("Loaded listEntries: [" + listEntries + "]");
 console.log("Loaded entryStyle: [" + entryStyle + "]");
