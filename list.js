@@ -31,8 +31,8 @@ updateList();
 
 function addElement(value) {
   if (value != "") {
-    value = value.replace("<", "");
-    value = value.replace(">", "");
+    value = value.replace(/</g, "");
+    value = value.replace(/>/g, "");
 
     listEntries.push(value);
     entryStyle.push(0);
