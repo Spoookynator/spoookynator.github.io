@@ -1,6 +1,8 @@
 // remove comment to disable logs
 // console.log = function() {};
 
+// used to catch localstorage = null
+// just makes a new, empty array in that case
 var temp0;
 if (localStorage.getItem("listEntries") === null)
 {
