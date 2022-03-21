@@ -1,6 +1,7 @@
 // remove comment to disable logs
 // console.log = function() {};
 
+localStorage.clear();
 if (JSON.parse(localStorage.getItem("listEntries")) == null) {
   const listEntries = [""];
 }  else {const listEntries = JSON.parse(localStorage.getItem("listEntries"));}
