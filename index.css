@@ -1,25 +1,128 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
   margin: auto;
+  color: aliceblue;
   max-width: 50rem;
   padding: 2rem;
+  background-color: rgba(32,33,36)
 }
 
-.entryColor {
-  background: #cce5ff;
-  color: darkblue;
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.deleteEntry {
-  transition: box-shadow 0.3s;
-
-  color: red;
-
-  cursor: pointer;
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
-.deleteEntry:hover {
-  background-color: rgb(250, 171, 171);
-  box-shadow: 0 0 11px rgba(253, 138, 138, 255);
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: lightyellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h1,h2 {
+  background-color: rgb(62, 63, 68);
+
+  padding-top: 10px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 15px;
   border-radius: 10px;
+
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+
+.center {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.text {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+
+  background-color: rgb(48, 49, 53);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.right
+{
+  position: fixed;
+  top: 32px;
+  right: 10px;
+
+  margin: auto;
+  text-align: left;
+
+  transition: box-shadow .3s
+}
+
+#githubPic
+{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: -30px;
+
+  margin: auto;
+  transition: box-shadow .3s
+
+}
+#githubPic:hover{
+  box-shadow: 0 0 11px rgba(255, 255, 255, 0.548);
+}
+.left
+{
+  position: fixed;
+  top: 32px;
+  left: 10px;
+
+  margin: auto;
+  text-align: left;
+
+  transition: box-shadow .3s
+}
+
+
+.interactable
+{
+  padding: 4px;
+  background-image: linear-gradient(rgb(79, 81, 85), rgb(79, 81, 85));
+  border-radius: 10px;
+
+  margin: auto;
+  text-align: left;
+
+  transition: box-shadow .3s;
+}
+
+.interactable:hover 
+{
+  box-shadow: 0 0 11px rgba(255, 255, 255, 0.548);
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  left: -30px;
+  text-align: left;
 }
