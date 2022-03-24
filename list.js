@@ -45,10 +45,9 @@ function addElement(value) {
 }
 
 function removeElement(entry) {
+  console.log(`Info: removed "${listEntries[entry]}"`);
   listEntries.splice(entry, 1);
   entryStyle.splice(entry, 1);
-  console.log(`Info: removed listEntries[${entry}]`);
-
   updateList();
 }
 
@@ -99,7 +98,7 @@ function shiftItem(entry, direction) {
 
     entryStyle[entry] = entryStyle[entry + 1];
     entryStyle[entry + 1] = temp2;
-    console.log(`shifted ${temp} ${direction}`);
+    console.log(`shifted "${temp}" ${direction}`);
   } else if (direction == "up") {
     listEntries[entry] = listEntries[entry - 1];
     listEntries[entry - 1] = temp;
@@ -107,7 +106,7 @@ function shiftItem(entry, direction) {
     entryStyle[entry] = entryStyle[entry - 1];
     entryStyle[entry - 1] = temp2;
 
-    console.log(`shifted ${temp2}  ${direction}`);
+    console.log(`shifted "${temp}" ${direction}`);
   }
 
   updateList();
@@ -118,15 +117,15 @@ function shiftItem(entry, direction) {
 function updateList() {
   let text = "<ul>";
   // creates new list element for each entry in listEntries array (with custom id)
-  for (let i = 0; i < listEntries.length; i++) {
-    text += `<li class = "entryColor" id="li${i}">${listEntries[i]}\xa0
-    <span id="deleteEntry${i}" class= "deleteEntry">x</span>\xa0
-    <span style = "cursor: pointer" class = "menuitem" id="changeColor${i}">\xa0⋮\xa0</span>\xa0`;
-    if (i != 0) {
-      text += `<span style = "cursor: pointer" id="shiftUp${i}">˄</span>\xa0`;
+  for (let x in listEntries) {
+    text += `<li class = "entryColor" id="li${x}">${listEntries[x]}\xa0
+    <span id="deleteEntry${x}" class= "deleteEntry">x</span>\xa0
+    <span style = "cursor: pointer" class = "menuitem" id="changeColor${x}">\xa0⋮\xa0</span>\xa0`;
+    if (x != 0) {
+      text += `<span style = "cursor: pointer" id="shiftUp${x}">˄</span>\xa0`;
     }
-    if (i != listEntries.length - 1) {
-      text += `<span style = "cursor: pointer" id="shiftDown${i}">˅</span>`;
+    if (x != listEntries.length - 1) {
+      text += `<span style = "cursor: pointer" id="shiftDown${x}">˅</span>`;
     }
 
     text += `</li>`;
