@@ -117,7 +117,7 @@ function shiftItem(entry, direction) {
 function updateList() {
   let text = "<ul>";
   // creates new list element for each entry in listEntries array (with custom id)
-  for (let x in listEntries) {
+  for (let x of listEntries) {
     text += `<li class = "entryColor" id="li${x}">${listEntries[x]}\xa0
     <span id="deleteEntry${x}" class= "deleteEntry">x</span>\xa0
     <span style = "cursor: pointer" class = "menuitem" id="changeColor${x}">\xa0⋮\xa0</span>\xa0`;
