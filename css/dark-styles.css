@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 
 body {
   background-color: rgb(41, 43, 59);
@@ -11,13 +11,16 @@ body {
 .game-title {
   font-weight: 400;
   font-size: 7vh;
-  margin: auto;
   padding: 10px;
-
   font-family: "Press Start 2P", cursive;
   text-align: center;
   background-color: rgb(80, 78, 90);
   display: inline;
+  margin-top: 100px;
+}
+
+.top-padding {
+  margin: 10px;
 }
 
 .title {
@@ -31,20 +34,6 @@ body {
   background-color: rgb(102, 84, 194);
 }
 
-@keyframes test {
-  from {
-    color: rgb(93, 178, 191);
-  }
-  to {
-    color: rgb(151, 217, 228)
-  }
-}
-.page-settings {
-  color: rgb(93, 178, 191);
-  animation: test infinite alternate-reverse;
-  animation-duration: 1s;
-}
- 
 .main-menu-button {
   max-width: fit-content;
   font-weight: 100;
@@ -96,32 +85,22 @@ a {
   text-decoration: none;
 }
 
-.options-container {
-  display: flexbox;
-}
-
-.material-symbols-sharp {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-  }
-
-.checkbox {
-font-size: 50px;
-display: inline;
+.back-button {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  color: white;
+  background-color: rgb(102, 84, 194);
+  padding: 10px;
 }
 
 .text {
-    font-family: "Press Start 2P", cursive;
-    text-align: center;
-    display: inline;
-    font-size: 30px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 40px;
 }
 
-.setting-container {
-    margin: auto;
-    display: flexbox;
-    align-items: center;
+.back-button:hover {
+  transform: scale(1.1);
+  transform: rotate(-1deg);
+  background-color: rgb(149, 135, 219);
 }

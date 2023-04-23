@@ -1,0 +1,49 @@
+.save {
+    margin: auto;
+    margin-top: 120px;
+    padding: 30px;
+    display: block;
+    width: fit-content;
+    background-color: rgb(102, 84, 194);
+}
+
+.save:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.save:nth-child(1) {
+    color: rgb(230, 212, 242);
+}
+.save:nth-child(1):hover {
+    box-shadow: 0px 0px 40px 20px rgba(192, 119, 210, 0.1);
+
+}
+.save:nth-child(2) {
+    color: rgb(215, 212, 242);
+}
+.save:nth-child(2):hover {
+    box-shadow: 0px 0px 40px 20px rgba(128, 119, 210, 0.1);
+
+}
+.save:nth-child(3) {
+    color: rgb(212, 242, 218);
+}
+.save:nth-child(3):hover {
+    box-shadow: 0px 0px 40px 20px rgba(119, 210, 130, 0.1);
+
+}
+@keyframes title-change-color {
+    from {
+      color: rgb(208, 88, 88);
+    }
+    to {
+      color: rgb(224, 173, 173)
+    }
+  }
+  
+  .page-saves {
+    color: rgb(190, 93, 93);
+    animation: title-change-color infinite alternate-reverse;
+    animation-duration: 1s;
+  }
