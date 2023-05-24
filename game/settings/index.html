@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/dark-styles.css" />
+    <link rel="stylesheet" href="/css/dark-styles-settings.css" />
+    <title>Settings</title>
+    <script src="/js/checkbox_toggle.js"></script>
+</head>
+
+<header>
+    <a class="back-button text" href="/index.html">Back</a>
+</header>
+<body onload="loadCheckboxesFromStorage()">
+    <br class="top-padding">
+    <h1 class="page-settings title">Settings</h1>
+    <div id="settings-container">
+        <div class="setting-container">
+            <div class="text">Dark mode</div>
+            <div class="material-symbols-sharp checkbox" onclick="toggle(this)" id="dark-mode">check_box</div>
+        </div>
+        <div class="setting-container">
+            <div class="text">Settings Checkbox 2</div>
+            <div class="material-symbols-sharp checkbox" onclick="toggle(this)" id="toggle-2">check_box</div>
+        </div>
+
+        <div class="setting-container">
+            <div class="text">Big boy settings checkbox 3</div>
+            <div class="material-symbols-sharp checkbox" onclick="toggle(this)" id="toggle-3">check_box</div>
+        </div>
+
+        <div class="setting-container">
+            <div class="text">empty settings checkbox</div>
+            <div class="material-symbols-sharp checkbox" onclick="toggle(this)" id="toggle-4">check_box_outline_blank</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+body {
+    background-color: rgb(41, 43, 59);
+    color: white;
+    text-align: center;
+  }
+  
+.title {
+    font-weight: 500;
+    font-size: 10vh;
+    margin: auto;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(80, 85, 119);
+    border-radius: 10px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 5vh;
+    margin: auto;
+    margin: 20px;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(191, 151, 208);
+  }
+
+.login {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    size: 500px;
+    margin: auto;
+}
+
+#api-response {
+    display: none;
+}
+
+.entry {
+    background-color: rgb(103, 112, 150);
+    margin: auto;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 1000px;
+}
+
+.entry:last-child {
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.entry:nth-of-type(2) {
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.entry:nth-child(2n){ background: rgb(133, 141, 176); }
+
+.entry:hover {
+    transform: scale(1.01);
+    background-color: rgb(81, 94, 148);
+}
+
+.sub-entry {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    border-style: none solid none none;
+    border-width: 1px;
+    padding-right: 20px;
+}
+
+.sub-entry:last-child {
+    border: none;
+}
+
+.subTitle {
+    background-color: rgb(103, 127, 150);
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+}
+
+.ID {
+    min-width: 40px;
+    max-width: 40px;
+}
+.Borrower {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.Amount {
+    min-width: 110px;
+    max-width: 110px;
+    border-color: white;
+    color: white;
+}
+
+.ReturnAmount {
+    min-width: 110px;
+    max-width: 110px;
+}
+
+.Date, .Due {
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    opacity: 0.5;
+}
+
+.button {
+    width: fit-content;
+    background-color: rgb(103, 127, 150);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
