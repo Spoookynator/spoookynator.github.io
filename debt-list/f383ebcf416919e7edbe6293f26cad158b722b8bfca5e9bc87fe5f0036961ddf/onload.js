@@ -4,7 +4,7 @@ function hideurl() {
 }
 
 function getData() {
-    var url = "https://sheets.googleapis.com/v4/spreadsheets/1q9msnFq9Zao2LXCa6NkbfefPoKHDeMp1an3npUkbxtA/values/List1!A:J?key=AIzaSyAFdMkfvs9m4qa7GtMPrQB597CgRLv0mqQ";                                                             
+    var url = "https://sheets.googleapis.com/v4/spreadsheets/1q9msnFq9Zao2LXCa6NkbfefPoKHDeMp1an3npUkbxtA/values/Data!A:J?key=AIzaSyAFdMkfvs9m4qa7GtMPrQB597CgRLv0mqQ";                                                             
     axios.get(url)
       .then(function (response) {
 
