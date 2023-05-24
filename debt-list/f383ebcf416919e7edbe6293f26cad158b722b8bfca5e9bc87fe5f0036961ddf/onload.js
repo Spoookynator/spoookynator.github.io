@@ -60,7 +60,7 @@ function displayResults(apiResponse) {
           subDiv.classList.add(item)
           testDiv.appendChild(subDiv)
       }
-      if (element["Payed"] == "Yes") {
+      if (element["Payed"] == "TRUE") {
         testDiv.classList.add("payed")
         testDiv.classList.add("hidden")
 
