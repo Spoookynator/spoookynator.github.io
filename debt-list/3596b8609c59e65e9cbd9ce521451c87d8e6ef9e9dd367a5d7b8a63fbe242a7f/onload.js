@@ -4,7 +4,7 @@ function hideurl() {
 }
 
 function getData() {
-    var url = "https://sheets.googleapis.com/v4/spreadsheets/1q9msnFq9Zao2LXCa6NkbfefPoKHDeMp1an3npUkbxtA/values/Data!A:J?key=AIzaSyAFdMkfvs9m4qa7GtMPrQB597CgRLv0mqQ";                                                             
+    var url = "https://sheets.googleapis.com/v4/spreadsheets/1q9msnFq9Zao2LXCa6NkbfefPoKHDeMp1an3npUkbxtA/values/Data!A:k?key=AIzaSyAFdMkfvs9m4qa7GtMPrQB597CgRLv0mqQ";                                                             
     axios.get(url)
       .then(function (response) {
 
@@ -34,7 +34,7 @@ function getData() {
 
 
 function displayResults(apiResponse) {
-  headers = ["ID", "Date", "Borrower", "Amount", "Due", "ReturnAmount"]
+  headers = ["Due", "Borrower", "Amount", "Return", "Profit"]
 
   values = apiResponse;
   debts = JSON.parse(values)
@@ -46,6 +46,7 @@ function displayResults(apiResponse) {
           subDiv.innerHTML = item
           headerDiv.appendChild(subDiv)
           subDiv.classList.add("sub-entry")
+          subDiv.classList.add("header-row")
           subDiv.classList.add(item)
   }
   document.body.appendChild(headerDiv)

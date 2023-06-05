@@ -122,10 +122,10 @@ input {
     min-width: 110px;
     max-width: 110px;
     border-color: white;
-    color: white;
+    color: rgb(255, 211, 211);
 }
 
-.ReturnAmount {
+.Return, .Profit {
     min-width: 110px;
     max-width: 110px;
 }
@@ -141,6 +141,11 @@ input {
 
 .shown {
     opacity: 0.5;
+}
+
+.header-row {
+    color: white;
+    font-weight: 900;
 }
 
 .button {
